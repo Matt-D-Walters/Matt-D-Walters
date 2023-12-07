@@ -183,3 +183,42 @@ main {
   font-size: 1.2em;
   line-height: 1.5;
 }
+
+.skills-section .skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.skills-section .skill-item {
+  text-align: center;
+  font-size: 1.2em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-section .skill-item:hover {
+  transform: scale(1.1);
+}
+
+.skills-section .skill-item img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.skill-category h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
