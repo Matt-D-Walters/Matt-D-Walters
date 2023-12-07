@@ -3,71 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew Walters Website!</title>
+  <title>Matthew Walters | Welcome to My Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
-      <h1>Welcome to my website!</h1>
-      <div class="title-links">
-        <a href="#projects">Projects</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact Me</a>
-      </div>
+  <header>
+    <h1>Welcome to my website!</h1>
+    <div class="title-links">
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact Me</a>
     </div>
   </header>
 
-  <section id="about" class="about-section">
-    <div class="container">
-      <div class="profile">
-        <div class="profile-image-container">
-          <img src="https://media.licdn.com/dms/image/C5603AQEByKW6J7nQQw/profile-displayphoto-shrink_200_200/0/1663270390763?e=1707350400&v=beta&t=JOlb6pWsoXpve7B5zaXVyEmVME_-9yMG0xzS08NQQO0" alt="Your Name" class="profile-image">
+  <main>
+    <div class="left-column">
+      <div class="profile-image-container">
+        <img src="https://media.licdn.com/dms/image/C5603AQEByKW6J7nQQw/profile-displayphoto-shrink_200_200/0/1663270390763?e=1707350400&v=beta&t=JOlb6pWsoXpve7B5zaXVyEmVME_-9yMG0xzS08NQQO0" alt="Matthew Walters" class="profile-image">
+      </div>
+      <div class="profile-info">
+        <h2>Matthew Walters</h2>
+        <p>Information Systems Student @ University of Cincinnati</p>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Matthew Walters, an Information Systems student at the University of Cincinnati. I am passionate about technology and data. My journey in the world of data has allowed me to develop skills in SQL, Python, R, Power BI, and Power Automate.
+        </p>
+        <p>
+          As a technology enthusiast, I am always eager to learn and stay updated on the latest industry trends. I believe in the power of collaboration and enjoy working on diverse projects that challenge and expand my skill set.
+        </p>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        
+        <div class="skill-category">
+          <h3>Data Technologies</h3>
+          <ul class="skills-list">
+            <li>
+              <img src="sql-icon.png" alt="SQL Icon">
+              SQL
+              <p class="skill-description">Experience in relational database management.</p>
+            </li>
+            <li>
+              <img src="python-icon.png" alt="Python Icon">
+              Python
+              <p class="skill-description">Used Python for various purposes</p>
+            </li>
+            <li>
+              <img src="r-icon.png" alt="R Icon">
+              R
+              <p class="skill-description">Performed statistical analysis and data visualization using R</p>
+            </li>
+            <li>
+              <img src="powerbi-icon.png" alt="Power BI Icon">
+              Power BI
+              <p class="skill-description">Created interactive reports and dashboards with Power BI</p>
+            </li>
+            <li>
+              <img src="powerautomate-icon.png" alt="Power Automate Icon">
+              Power Automate
+              <p class="skill-description">Automated workflows using Power Automate</p>
+            </li>
+          </ul>
         </div>
-        <div class="profile-info">
-          <h2>Matthew Walters</h2>
-          <p>Information Systems Student @ University of Cincinnati</p>
+
+      </section>
+
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Description of Project 1.</p>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+        </div>
+      </section>
 
-  <section id="skills" class="skills-section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
+      <section id="contact" class="contact-section">
+        <h2>Contact Information</h2>
+        <p>Email: waltemw@mail.uc.edu</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mattdwalters/" target="_blank">https://www.linkedin.com/in/mattdwalters/</a></p>
+        <p>GitHub: <a href="https://github.com/Matt-D-Walters" target="_blank">https://github.com/Matt-D-Walters</a></p>
+      </section>
     </div>
-  </section>
-
-  <section id="projects" class="projects-section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Description of Project 1.</p>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Description of Project 2.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>Contact Information</h2>
-      <p>Email: waltemw@mail.uc.edu</p>
-      <p>LinkedIn: https://www.linkedin.com/in/mattdwalters/</p>
-      <p>GitHub: https://github.com/Matt-D-Walters</p>
-    </div>
-  </section>
+  </main>
 
   <!-- JavaScript for smooth scrolling -->
   <script src="script.js"></script>
