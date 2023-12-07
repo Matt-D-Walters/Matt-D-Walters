@@ -83,6 +83,7 @@ main {
 .skills-section,
 .projects-section,
 .contact-section {
+  text-align: center;
   background-color: #fff;
   margin-bottom: 20px;
   padding: 20px;
@@ -129,6 +130,7 @@ main {
 }
 
 .contact-section p {
+  text-align: center;
   margin: 10px 0;
   font-size: 1.2em;
 }
@@ -271,7 +273,6 @@ main {
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #ddd; 
   display: flex;
   align-items: center;
   justify-content: center;
