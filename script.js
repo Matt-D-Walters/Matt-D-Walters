@@ -1,3 +1,4 @@
+// script.js
 document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll('nav a, .title-links a');
 
@@ -16,3 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+function openCVInNewTab() {
+  window.open("https://docs.google.com/document/d/1LEyzJIwCVkbm2w4WPKTUWwz0LkKh8gMjruibQ5uFNkQ/edit", "_blank");
+}
