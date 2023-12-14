@@ -19,5 +19,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function openCVInNewTab() {
-  window.open("https://docs.google.com/document/d/1LEyzJIwCVkbm2w4WPKTUWwz0LkKh8gMjruibQ5uFNkQ/edit", "_blank");
+  window.open("https://docs.google.com/document/d/1QofzDOS4BSql_ILKyYXtac3h_OMphSqBGLXJ0LF3IUY/edit?usp=sharing", "_blank");
 }
