@@ -40,14 +40,18 @@ header h1 {
 
 main {
   display: flex;
-  flex: 1;
+  flex-wrap: wrap; /* Allow for multiple rows on smaller screens */
+  justify-content: space-between; /* Maintain space between columns */
+  padding: 20px;
 }
 
 .left-column {
-  width: 300px;
+  width: 100%; /* Take full width on small screens */
+  max-width: 300px; /* Limit width on larger screens */
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .profile-image-container {
@@ -76,10 +80,11 @@ main {
 }
 
 .right-column {
-  flex: 1;
-  padding: 20px;
+  flex: 1; /* Take the remaining space */
+  max-width: calc(100% - 320px); /* Limit width on larger screens */
 }
 
+.about-section,
 .skills-section,
 .projects-section,
 .contact-section {
@@ -89,6 +94,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.about-section h2,
 .skills-section h2,
 .projects-section h2,
 .contact-section h2 {
@@ -96,12 +102,21 @@ main {
   margin-bottom: 20px;
 }
 
-.skills-section ul {
+.about-section p,
+.skills-section p,
+.projects-section p,
+.contact-section p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.skills-section ul,
+.skills-section .skills-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .skills-section li {
@@ -110,7 +125,7 @@ main {
 }
 
 .project {
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -133,56 +148,29 @@ main {
   font-size: 1.2em;
 }
 
-.skills-section .skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.contact-icons {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-item {
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.skills-section li {
-  margin: 10px;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.skills-section li img {
-  max-width: 50px;
-  max-height: 50px;
-  margin-bottom: 10px; /* Increased spacing */
-  border-radius: 50%;
-  border: 2px solid #ddd;
-}
-
-.skill-category {
-  margin-bottom: 20px;
-}
-
-.skill-category h3 {
-  font-size: 1.5em;
-}
-
-.skill-description {
-  font-size: 1em;
-}
-
-.about-section {
-  background-color: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-section h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-}
-
-.about-section p {
-  font-size: 1.2em;
-  line-height: 1.5;
+.contact-icon img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .skills-section .skills-list {
@@ -210,19 +198,18 @@ main {
   max-height: 50px;
   border-radius: 50%;
   border: 2px solid #ddd;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Increased spacing */
 }
 
 .skill-category {
   margin-bottom: 20px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
 }
 
 .skill-category h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
+
 .left-column {
   width: 250px;
   background-color: #f2f2f2; /* Light gray background color */
@@ -231,53 +218,12 @@ main {
   border-right: 1px solid #ddd; /* Border on the right side */
 }
 
-.profile-image-container {
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+@media (min-width: 768px) {
+  main {
+    flex-wrap: nowrap; /* Prevent columns from stacking on larger screens */
+  }
 
-.profile-image {
-  width: 100%;
-  height: auto;
+  .left-column {
+    margin-right: 20px;
+  }
 }
-
-.profile-info {
-  text-align: left;
-}
-
-.profile-info h2 {
-  margin-top: 0;
-  font-size: 1.8em;
-}
-
-.profile-info p {
-  margin-bottom: 0;
-  font-size: 1.2em;
-}
-.contact-icons {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contact-item {
-  text-align: center;
-  text-decoration: none;
-}
-
-.contact-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-icon img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
