@@ -1,3 +1,4 @@
+/* Reset default styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -5,9 +6,6 @@ body {
   box-sizing: border-box;
   background-color: #f4f4f4;
   color: #333;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 header {
@@ -15,12 +13,11 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
-  width: 100%;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .title-links {
@@ -31,23 +28,19 @@ header h1 {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .title-links a:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap; /* Allow for multiple rows on smaller screens */
-  justify-content: space-between; /* Maintain space between columns */
   padding: 20px;
 }
 
 .left-column {
-  width: 100%; /* Take full width on small screens */
-  max-width: 300px; /* Limit width on larger screens */
+  width: 100%;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -57,30 +50,56 @@ main {
 .profile-image-container {
   overflow: hidden;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .profile-image {
-  width: 100%;
-  height: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Create circular shape */
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
 .profile-info {
-  text-align: left;
+  text-align: center;
 }
 
 .profile-info h2 {
-  margin-top: 0;
-  font-size: 1.8em;
+  margin-top: 10px;
+  font-size: 1.2em;
 }
 
 .profile-info p {
   margin-bottom: 0;
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+.coursework {
+  margin-top: 20px; /* Adjusted margin for better spacing */
+}
+
+.coursework h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.coursework ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coursework li {
+  font-size: 1em;
+  margin-bottom: 5px; /* Adjusted margin for better spacing */
 }
 
 .right-column {
-  flex: 1; /* Take the remaining space */
-  max-width: calc(100% - 320px); /* Limit width on larger screens */
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .about-section,
@@ -97,7 +116,7 @@ main {
 .skills-section h2,
 .projects-section h2,
 .contact-section h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
@@ -105,7 +124,7 @@ main {
 .skills-section p,
 .projects-section p,
 .contact-section p {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -114,18 +133,16 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .skills-section li {
-  margin: 0 10px;
-  font-size: 1.2em;
+  margin: 0 5px;
+  font-size: 0.8em;
 }
 
 .project {
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: left;
@@ -133,18 +150,18 @@ main {
 
 .project h3 {
   margin-top: 0;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 .project p {
   margin-bottom: 0;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .contact-section p {
   text-align: center;
   margin: 10px 0;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .contact-icons {
@@ -158,8 +175,8 @@ main {
 }
 
 .contact-icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -174,30 +191,29 @@ main {
 
 .skills-section .skills-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
 }
 
 .skills-section .skill-item {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 0.9em;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
   transition: transform 0.3s ease-in-out;
 }
 
 .skills-section .skill-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .skills-section .skill-item img {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 40px;
+  max-height: 40px;
   border-radius: 50%;
   border: 2px solid #ddd;
-  margin-bottom: 10px; /* Increased spacing */
+  margin-bottom: 5px;
 }
 
 .skill-category {
@@ -205,24 +221,6 @@ main {
 }
 
 .skill-category h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 10px;
-}
-
-.left-column {
-  width: 250px;
-  background-color: #f2f2f2; /* Light gray background color */
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-right: 1px solid #ddd; /* Border on the right side */
-}
-
-@media (min-width: 768px) {
-  main {
-    flex-wrap: nowrap; /* Prevent columns from stacking on larger screens */
-  }
-
-  .left-column {
-    margin-right: 20px;
-  }
 }
