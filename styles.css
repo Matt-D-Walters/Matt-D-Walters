@@ -39,67 +39,35 @@ main {
   padding: 20px;
 }
 
-.left-column {
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+.profile {
+  display: flex;
+  align-items: center;
 }
 
 .profile-image-container {
-  overflow: hidden;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-right: 20px;
 }
 
 .profile-image {
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Create circular shape */
-  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-info {
-  text-align: center;
+  text-align: left;
 }
 
-.profile-info h2 {
-  margin-top: 10px;
-  font-size: 1.2em;
-}
-
-.profile-info p {
-  margin-bottom: 0;
-  font-size: 1em;
-}
-
-.coursework {
-  margin-top: 20px; /* Adjusted margin for better spacing */
-}
-
-.coursework h2 {
-  font-size: 1.5em;
+.name {
+  font-size: 2em;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.coursework ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.coursework li {
-  font-size: 1em;
-  margin-bottom: 5px; /* Adjusted margin for better spacing */
-}
-
-.right-column {
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+.details {
+  margin: 5px 0;
+  font-size: 1.1em;
 }
 
 .about-section,
@@ -126,67 +94,6 @@ main {
 .contact-section p {
   font-size: 1em;
   line-height: 1.5;
-}
-
-.skills-section ul,
-.skills-section .skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skills-section li {
-  margin: 0 5px;
-  font-size: 0.8em;
-}
-
-.project {
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.project h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.project p {
-  margin-bottom: 0;
-  font-size: 1em;
-}
-
-.contact-section p {
-  text-align: center;
-  margin: 10px 0;
-  font-size: 1em;
-}
-
-.contact-icons {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contact-item {
-  text-align: center;
-  text-decoration: none;
-}
-
-.contact-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-icon img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .skills-section .skills-list {
@@ -223,4 +130,35 @@ main {
 .skill-category h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
+}
+
+.contact-section p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-item {
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon img {
+  max-width: 100%;
+  max-height: 100%;
 }
