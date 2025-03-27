@@ -4983,8 +4983,28 @@ a img {
 }
 
 .tech {
-    margin: 10px
+    margin: 10px;
+    display: block; /* Ensures it takes full width */
+    text-align: center;
 }
+
+.tech2 {
+    margin: 10px auto; /* Centers it horizontally */
+    display: block; /* Forces it to be on a new line */
+    text-align: center;
+}
+.tech2 img {
+    width: 150px; /* Match Devicon icon size */
+    height: 150px; /* Ensures uniform height */
+    object-fit: contain; /* Ensures images are not cropped */
+    display: inline-block; /* Helps with alignment */
+    vertical-align: middle; /* Aligns them properly */
+}
+
+.page-break {
+    page-break-before: always; /* Ensures the element starts on a new page */
+}
+
 
 .user {
     text-align: center;
