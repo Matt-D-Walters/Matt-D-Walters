@@ -4987,31 +4987,45 @@ a img {
 }
 
 .tech2 {
-  margin: 20px auto;
+  margin: 30px auto;
   text-align: center;
+}
+
+.tech2 h2 {
+  margin-bottom: 15px; /* space between title and logos */
+  font-size: 1.6rem;   /* adjust for prominence */
+}
+
+.tech2 .logos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px; /* space between logos */
+  gap: 25px; /* spacing between logos */
 }
 
 .tech2 img {
-  width: 120px;
-  height: 80px;           /* makes all logos sit in the same visual “box” */
-  object-fit: contain;    /* keeps proportions without stretching */
-  background-color: white;/* optional, for contrast */
-  border-radius: 8px;     /* optional, smooth corners */
-  padding: 5px;           /* helps with tight logos */
-  box-shadow: 0 0 4px rgba(0,0,0,0.05); /* optional subtle polish */
+  width: 150px;          /* bigger logos */
+  height: 100px;         /* taller frame for balance */
+  object-fit: contain;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease; /* optional: subtle hover effect */
+}
+
+.tech2 img:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 600px) {
   .tech2 img {
-    width: 80px;
-    height: 60px;
+    width: 100px;
+    height: 70px;
   }
 }
+
 
 
 .page-break {
