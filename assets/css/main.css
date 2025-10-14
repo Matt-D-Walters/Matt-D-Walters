@@ -4987,22 +4987,32 @@ a img {
 }
 
 .tech2 {
-    margin: 10px auto; /* Centers it horizontally */
-    display: block; /* Forces it to be on a new line */
-    text-align: center;
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* space between logos */
 }
+
 .tech2 img {
-  max-width: 120px;
-  height: auto;
-  object-fit: contain;
-  margin: 10px;
+  width: 120px;
+  height: 80px;           /* makes all logos sit in the same visual “box” */
+  object-fit: contain;    /* keeps proportions without stretching */
+  background-color: white;/* optional, for contrast */
+  border-radius: 8px;     /* optional, smooth corners */
+  padding: 5px;           /* helps with tight logos */
+  box-shadow: 0 0 4px rgba(0,0,0,0.05); /* optional subtle polish */
 }
 
 @media (max-width: 600px) {
   .tech2 img {
-    max-width: 80px;
+    width: 80px;
+    height: 60px;
   }
 }
+
 
 .page-break {
     page-break-before: always; /* Ensures the element starts on a new page */
