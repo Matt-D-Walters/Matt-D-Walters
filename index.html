@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
     <meta charset="utf-8" />
-
-    <!-- Viewport Metadata -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
     <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
     <meta name="author" content="Matthew Walters" />
-
-    <!-- Webpage Logo -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
     <title>Matthew Walters</title>
-
-    <!-- Import CSS: Main Stylesheet -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
@@ -36,115 +29,105 @@
             <i class="icon fa fa-github-alt" aria-hidden="true"></i>
           </a>
           <a aria-label="My Résumé" target="_blank" href="https://docs.google.com/document/d/1Z3TYQc_9fOzp1ME5Jwr0Fd4SCgmdYr0cT3JpXaa_5sE">
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+            <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
           </a>
-          <a aria-label="Send Email" href="mailto:Matt.UC@Outlook.com" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
+          <a aria-label="Send Email" href="mailto:Matt.UC@Outlook.com" target="_blank">
+            <i class="icon fa fa-envelope" aria-hidden="true"></i>
+          </a>
         </div>
         <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
+          <a class="link" href="#about">About Me</a>
+          <a class="link" href="#skills">Skills</a>
+          <a class="link" href="#projects">Projects</a>
         </div>
       </div>
       <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
 
-    <!-- About Section -->
+    <!-- About Section - Full Page -->
     <section id="about">
-      <!-- User Introduction-->
       <div class="user-details">
         <h1>About Me</h1>
         <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/webp/headshot.jpg"
-            alt="Professional Me"
-            width="50%"
-          />
-          <img
-            src="./assets/img/jpg/headshot.jpg"
-            alt="Professional Me"
-            width="50%"
-          />
+          <source type="image/webp" srcset="./assets/img/webp/headshot.jpg" alt="Professional Me" />
+          <img src="./assets/img/jpg/headshot.jpg" alt="Professional Me" width="50%" />
         </picture>
       </div>
-        <p>Hello! I'm <strong>Matthew Walters</strong>, a Graduate <em>Information Systems</em> student at the <strong>University of Cincinnati</strong>. I am passionate about technology and data. My journey in the world of data has allowed me to develop skills in <strong>SQL</strong>, <strong>Python</strong>, <strong>R</strong>, <strong>Power BI</strong>, and <strong>Power Automate</strong>.</p>
-  <p>As a technology enthusiast, I am always eager to learn and stay updated on the latest industry trends. I currently serve as an Insights Analyst for a leading CPG (Consumer Packaged Goods) brokerage.</p>
-    <div class="user">
-<div class="tech">
-  <h2>Languages</h2>
-  <div class="icon-wrapper">
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" /></div>
-<div class="icon-box">
-  <img src="https://daxstudio.org/img/daxstudio-logo-light.svg" alt="DAX Studio" /></div>
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" /></div>
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" /></div>
-    <div class="icon-box"><i class="devicon-html5-plain-wordmark colored"></i></div>
-    <div class="icon-box"><i class="devicon-css3-plain-wordmark colored"></i></div>
-
-  </div>
-  <p>My favorite languages!</p>
-</div>
-
-<div class="tech">
-  <h2>Tools / Libraries</h2>
-  <div class="icon-wrapper">
-    <div class="icon-box"><i class="devicon-git-plain-wordmark colored"></i></div>
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /></div>
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" /></div>
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" /></div>
-    <div class="icon-box"><i class="devicon-github-plain-wordmark colored"></i></div>
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" /></div>
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" /></div>
-    <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg" /></div>
-  </div>
-  <p>My favorite tools for version control, code editing, and packages that I use!</p>
-</div>
+      <p>Hello! I'm <strong>Matthew Walters</strong>, a Graduate <em>Information Systems</em> student at the <strong>University of Cincinnati</strong>. I am passionate about technology and data. My journey in the world of data has allowed me to develop skills in <strong>SQL</strong>, <strong>Python</strong>, <strong>R</strong>, <strong>Power BI</strong>, and <strong>Power Automate</strong>.</p>
+      <p>As a technology enthusiast, I am always eager to learn and stay updated on the latest industry trends. I currently serve as an Insights Analyst for a leading CPG (Consumer Packaged Goods) brokerage.</p>
     </section>
-    <!-- Data Sources Section -->
-<section>
-  <div class="tech2">
-    <h2>Data Systems</h2>
-    <div class="logos">
-      <img src="assets/img/jpg/84.51 Stratum.png" />
-      <img src="assets/img/jpg/SPINS.jpg" />
-      <img src="assets/img/jpg/Nielsen.jpg" />
-    </div>
-  </div>
-</section>
+
+    <!-- Skills Section - Languages, Tools, Data Systems -->
+    <section id="skills">
+      <div class="user-details">
+        <h1>Skills & Tools</h1>
+      </div>
+      
+      <div class="user">
+        <div class="tech">
+          <h2>Languages</h2>
+          <div class="icon-wrapper">
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python" /></div>
+            <div class="icon-box"><img src="https://daxstudio.org/img/daxstudio-logo-light.svg" alt="DAX Studio" /></div>
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt="R" /></div>
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL" /></div>
+            <div class="icon-box"><i class="devicon-html5-plain-wordmark colored"></i></div>
+            <div class="icon-box"><i class="devicon-css3-plain-wordmark colored"></i></div>
+          </div>
+          <p>My favorite languages!</p>
+        </div>
+
+        <div class="tech">
+          <h2>Tools / Libraries</h2>
+          <div class="icon-wrapper">
+            <div class="icon-box"><i class="devicon-git-plain-wordmark colored"></i></div>
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" /></div>
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter" /></div>
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" alt="Eclipse" /></div>
+            <div class="icon-box"><i class="devicon-github-plain-wordmark colored"></i></div>
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" /></div>
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" alt="Pandas" /></div>
+            <div class="icon-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg" alt="Matplotlib" /></div>
+          </div>
+          <p>My favorite tools for version control, code editing, and packages that I use!</p>
+        </div>
+      </div>
+
+      <div class="tech2">
+        <h2>Data Systems</h2>
+        <div class="logos">
+          <img src="./assets/img/jpg/84.51 Stratum.png" alt="84.51" />
+          <img src="./assets/img/jpg/SPINS.jpg" alt="SPINS" />
+          <img src="./assets/img/jpg/Nielsen.jpg" alt="Nielsen" />
+        </div>
+      </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects">
       <div class="user-details">
-        <h1>Featured Projects </h1>
+        <h1>Featured Projects</h1>
       </div>
 
-        <!-- User Project #1: Regork Churn -->
-        <div class="user-projects">
-          <div class="images-right">
-            <picture>
-              <source type="image/webp" srcset="./assets/img/webp/logo.png" alt="regork" width = "1000" />
-              <img alt="regork" src="./assets/img/jpg/regork.png" />
-            </picture>
-          </div>
-          <div class="contents" style="text-align: center">
-            <h3>Customer Churn Analysis</h3>
-            <div>
-              <img
-                height="32"
-                width="32"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg"
-              />
-        
-            <p style="text-align: justify">
-              Regork, a company venturing into the telecommunications sector, aims to understand customer behavior to reduce churn. We utilize machine learning techniques such as logistic regression, MARS, and random forest to identify key factors influencing customer attrition
-            </p>
-            <a class="project-link" target="_blank" href="https://rpubs.com/xMDW/1176602">Check it out!</a>
-          </div>
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/webp/logo.png" alt="regork" />
+            <img alt="regork" src="./assets/img/jpg/regork.png" />
+          </picture>
         </div>
-
-
+        <div class="contents">
+          <h3>Customer Churn Analysis</h3>
+          <div>
+            <img height="32" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt="R" />
+          </div>
+          <p>
+            Regork, a company venturing into the telecommunications sector, aims to understand customer behavior to reduce churn. We utilize machine learning techniques such as logistic regression, MARS, and random forest to identify key factors influencing customer attrition
+          </p>
+          <a class="project-link" target="_blank" href="https://rpubs.com/xMDW/1176602">Check it out!</a>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <p>&copy; Matthew Walters, 2025</p>
