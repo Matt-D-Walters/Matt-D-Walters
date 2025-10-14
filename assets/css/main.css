@@ -4994,11 +4994,16 @@ a img {
     text-align: center;
 }
 .tech2 img {
-    width: 150px; /* Match Devicon icon size */
-    height: 150px; /* Ensures uniform height */
-    object-fit: contain; /* Ensures images are not cropped */
-    display: inline-block; /* Helps with alignment */
-    vertical-align: middle; /* Aligns them properly */
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .tech2 img {
+    max-width: 80px;
+  }
 }
 
 .page-break {
