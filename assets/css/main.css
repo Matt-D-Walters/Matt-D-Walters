@@ -4983,9 +4983,7 @@ a img {
 }
 
 .tech {
-    margin: 10px;
-    display: block; /* Ensures it takes full width */
-    text-align: center;
+    margin: 10px
 }
 
 .tech2 {
